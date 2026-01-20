@@ -84,6 +84,13 @@ page 70100 "BOM Cost Shares by Category"
                         UpdatePage();
                     end;
                 }
+                field("Allow No Filter"; ShowALL)
+                {
+                    trigger OnValidate()
+                    begin
+                        UpdatePage();
+                    end;
+                }
             }
 
             repeater(Lines)
@@ -229,6 +236,17 @@ page 70100 "BOM Cost Shares by Category"
                     ShowWarningsForAllLines();
                 end;
             }
+            action("Show All")
+            {
+                ApplicationArea = Basic, Suite;
+                Caption = 'Show ALL';
+                Image = ErrorLog;
+
+                trigger OnAction()
+                begin
+                    ShowWarningsForAllLines();
+                end;
+            }
         }
 
         area(reporting)
@@ -297,6 +315,7 @@ page 70100 "BOM Cost Shares by Category"
         DisplayTopItem: Code[20];
         DisplayParentItem: Code[20];
         CurrentRootItem: Code[20];
+        ShowALL: Boolean;
         Text000: Label 'None of the items in the selected filter have a BOM.';
         Text001: Label 'There are no warnings.';
 
@@ -316,10 +335,11 @@ page 70100 "BOM Cost Shares by Category"
         Rec.DeleteAll();
 
         // If both filters blank → clear page and refresh
-        if (ItemCategoryFilter = '') and (ItemFilter = '') then begin
-            CurrPage.Update(false);
-            exit;
-        end;
+        if not ShowALL then  //JH added code to be able to run wide open
+            if (ItemCategoryFilter = '') and (ItemFilter = '') then begin
+                CurrPage.Update(false);
+                exit;
+            end;
 
         Item.Reset();
         Item.SetRange("Date Filter", 0D, WorkDate());
