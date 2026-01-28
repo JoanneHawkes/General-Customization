@@ -2,7 +2,7 @@
   "id": "7ce039cf-e11d-42be-ba66-0d5159769a72",
   "name": "General Customization",
   "publisher": "Mcdoaw",
-  "version": "1.0.0.12",
+  "version": "1.0.0.15",
   "brief": "",
   "description": "",
   "privacyStatement": "",
@@ -11,46 +11,11 @@
   "url": "",
   "logo": "",
   "dependencies": [
-    {
-      "id": "de962a72-f024-4c90-a48b-cf4964bca813",
-      "name": "Commodity Contract Dairy",
-      "version": "26.4.8.3",
-      "publisher": "RSM US LLP"
-    },
-    {
-      "id": "cee29cae-73ef-427c-b807-bbc35b9b694a",
-      "name": "Essentials - CPG",
-      "version": "26.5.372.0",
-      "publisher": "RSM US LLP"
-    },
-    {
-      "id": "53eb0a2a-d96f-4970-912f-c36786aa3fc4",
-      "name": "Advanced Trade Management",
-      "version": "27.0.336.0",
-      "publisher": "RSM US LLP"
-    },
-    {
-      "id": "417076a7-5b70-41b8-b698-cd5fd08afc53",
-      "name": "Concentration and Substitution Management",
-      "version": "26.4.1.0",
-      "publisher": "RSM US LLP"
-    },
-    {
-      "id": "cce158af-efae-4a82-a0bc-04959158738d",
-      "name": "Commodity Contract Management",
-      "version": "26.5.159.1",
-      "publisher": "RSM US LLP"
-    },
+    
     {
       "id": "5f1b448b-af53-483f-896d-573f9f724103",
       "name": "Oberweis Dairy Customization",
-      "version": "1.0.0.3",
-      "publisher": "RSM US LLP"
-    },
-    {
-      "id": "b7ca5810-7dcc-487b-ab48-10dee796fd87",
-      "name": "Rapid Manufacturing",
-      "version": "26.4.72.0",
+      "version": "1.0.0.4",
       "publisher": "RSM US LLP"
     },
     {
@@ -69,7 +34,7 @@
     {
       "id": "6da8dd2f-e698-461f-9147-8e404244dd85",
       "name": "Continia Document Capture",
-      "version": "27.1.1.252393",
+      "version": "27.2.4.314473",
       "publisher": "Continia Software"
     }
   ],

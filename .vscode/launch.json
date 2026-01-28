@@ -16,6 +16,20 @@
             "enableSqlInformationDebugger": true
         },
         {
+            "name": "PRODCOPY_01_21_26_TK",
+            "request": "launch",
+            "type": "al",
+            "environmentType": "Sandbox",
+            "environmentName": "PRODCOPY_01_21_26_TK",
+            "startupObjectId": 22,
+            "startupObjectType": "Page",
+            "breakOnError": "All",
+            "launchBrowser": true,
+            "tenant": "0c8f8bc3-9599-47f3-b769-9eb1bf4d126f",
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true
+        },
+        {
             "name": "PRODCOPY_10_28_25_MP",
             "request": "launch",
             "type": "al",
